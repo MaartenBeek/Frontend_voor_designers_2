@@ -58,7 +58,6 @@ function populateArticle(jsonObj) {
 }
 
 function searchFunction() {
-  // Declare variables 
   var input, filter, section, article, h2, i, txtValue, noResult;
   input = document.getElementById("myInput");
   filter = input.value.toUpperCase();
@@ -66,7 +65,6 @@ function searchFunction() {
   article = section.getElementsByTagName("article");
   noResult = document.getElementById("noResult");
 
-  // Loop through all table rows, and hide those who don't match the search query
   for (i = 0; i < article.length; i++) {
     h2 = article[i].getElementsByTagName("h2")[0];
     if (h2) {
@@ -119,18 +117,6 @@ function meerInfo() {
 }
 
 meerInfo();
-
-//var filmcards = document.querySelectorAll("div");
-//
-//    for (var i = 0; i < filmcards.length; i++){
-//      filmcards[i].addEventListener("click", function() {
-//        this.classList.toggle('big');
-//        console.log(this)
-//        console.log('klik');
-//      });
-//    }
-//    
-//  });
 
 
 
